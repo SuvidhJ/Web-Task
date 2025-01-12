@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Assignment showcasing Block and Inline Elements and Semantic HTML.">
+    <meta name="author" content="[Your Name]">
+    <title>HTML Assignment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(to bottom, #f4f4f9, #dce1e8);
+            color: #333;
+            line-height: 1.8;
+        }
+
+        header {
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            padding: 0.8rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff9800;
+            border-bottom: 2px solid #ff9800;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .profile {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #0044cc;
+        }
+
+        .profile p {
+            text-align: justify;
+            font-size: 1.1rem;
+        }
+
+        .highlight {
+            color: #ff9800;
+            font-weight: bold;
+        }
+
+        strong {
+            font-weight: bold;
+            color: #333;
+        }
+
+        em {
+            font-style: italic;
+            color: #666;
+        }
+
+        article {
+            margin-bottom: 2rem;
+        }
+
+        article h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: #0044cc;
+        }
+
+        article p {
+            margin-bottom: 1rem;
+        }
+
+        article a {
+            color: #0044cc;
+            text-decoration: none;
+        }
+
+        article a:hover {
+            text-decoration: underline;
+        }
+
+        video {
+            display: block;
+            margin: 1rem auto;
+            border: 2px solid #0044cc;
+            border-radius: 8px;
+        }
+
+        footer {
+            padding: 2rem;
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            border-top: 5px solid #ff9800;
+        }
+
+        footer h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        form {
+            background: white;
+            padding: 2rem;
+            margin: 0 auto;
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        form input,
+        form textarea,
+        form button {
+            width: 100%;
+            margin-bottom: 1.5rem;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        form button {
+            background-color: #0044cc;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #003399;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HTML Assignment</h1>
+        <p>An HTML assignment showcasing the power of creativity, semantic HTML, and block and inline elements.</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#navigation">Navigation</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <h2>About Me</h2>
+            <div class="profile">
+                <img src="\C:\Users\HP\Downloads\profile.jpg" alt="Profile Picture">
+                <div>
+                    <p>
+                        Hello! My name is <span class="highlight">Suvidh Jain</span>, and I am a passionate <strong>webdeveloper</strong>
+                        with a love for creativity and innovation. My journey in web development started with a deep curiosity for
+                        technology and design.
+                    </p>
+                    <p>
+                        I specialize in creating <em>user-friendly</em> and visually appealing websites. With a focus on
+                        <strong>modern</strong> design trends and functional solutions, I aim to bring ideas to life. My dedication to
+                        excellence and problem-solving sets me apart in this field.
+                    </p>
+                    <p>
+                        Beyond coding, I enjoy exploring the world of <b>technology</b> and <b>design</b>, combining them to understand how
+                        design impacts user behavior. Let's embark on a journey of creativity and collaboration!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="navigation">
+            <h2>Navigation Page</h2>
+            <ul>
+                <li><a href="./Assignments/1a.html"> Activity 1a: TimeTable</a></li>
+                <li><a href="./Assignments/1b.html"> Activity 1b: Solar System</a></li>
+                <li><a href="./Assignments/1c.html"> Activity 1c: My Profile Page</a></li>
+                <li><a href="./Assignments/1d.html"> Activity 1d: Form</a></li>
+            </ul>
+        </section>
+
+        <section id="blog">
+            <h2>Blog Page</h2>
+            <article>
+                <h3>Hosting a Website on GitHub</h3>
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>
+                    This video provides a step-by-step guide to hosting a website on GitHub. It's designed for beginners
+                    and covers essential techniques to get started.
+                </p>
+                <a href="https://github.com/SuvidhJ" target="_blank">Visit My GitHub Repository</a>
+            </article>
+        </section>
+
+        <footer id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here"
+                    required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </footer>
+    </div>
+</body>
+
+</html>
